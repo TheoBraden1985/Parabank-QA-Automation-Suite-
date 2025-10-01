@@ -17,7 +17,7 @@ Whats Covered:
 --**Responsiveness**: viewport smoke tests across mobile, tablet, and desktop 
 --**Visual**: logo integrity, unique Ids on form fields
 
-## 🔄 User Flows 
+### 🔄 User Flows 
 --**Registration Flow**: happy + missing fields + mismatches
 --**Login Flow**: happy + empty/missing fields 
 --**Contact Form**: happy + missing field + invalid email 
