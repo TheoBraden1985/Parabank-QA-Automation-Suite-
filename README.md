@@ -1,5 +1,5 @@
 # Parabank-QA-Automation-Suite-
-This. repository contains a full end-to-end test suite for the Parabank Demo Banking Application (https://parasoft.parasoft.com). It demonstrates API and UI automation coverage across critical workflows, accessibility, and error handling. The suite was built with Cypress, following QA best practices like idempotence check, boundary conditions, and negative path testing.
+This repository contains a full end-to-end test suite for the Parabank Demo Banking Application (https://parasoft.parasoft.com). It demonstrates API and UI automation coverage across critical workflows, accessibility, and error handling. The suite was built with Cypress, following QA best practices like idempotence check, boundary conditions, and negative path testing.
 
 Whats Covered:
 
@@ -25,11 +25,11 @@ Whats Covered:
 ## 🎯 Example Test Objectives 
 Every test is annotated with clear objectives. For example: 
 
-	/* OBJECTIVES 
-	1. Ensure all top navigation links are reachable via TAB key navigation.
-	2. Verify pressing TAB moves focus sequentially across the menu.
-	3. Confirm focused elements are visible and interactable.
-	*/
+/* OBJECTIVES 
+1. Ensure all top navigation links are reachable via TAB key navigation.
+2. Verify pressing TAB moves focus sequentially across the menu.
+3. Confirm focused elements are visible and interactable.
+*/
 
 ## 🐛 Bugs Discovered
 While building the suite, i discovered several defects in the Parabank app, including: 
