@@ -1,5 +1,5 @@
 import { getRequests } from "./API.support.utils/getRequests";
-import { expectOk, toNumber, normaliseResponse, formatAndSchema, assertTxnsSample, assertAcctsSample, checkArrayLength } from "./General.Support/helperFunctions";
+import { expectOk, toNumber, normaliseResponse, formatAndSchema, assertTxnsSample, assertAcctsSample } from "./General.Support/helperFunctions";
 import { postRequests } from "./API.support.utils/postRequests";
 import { dynamicForm } from "./Form/Userflow Support/dynamicForm";
 console.log('[commands] evaluated');
@@ -41,7 +41,6 @@ Cypress.Commands.add('getAccounts', (customerId) => {
         .then(expectOk)
         .then(res => formatAndSchema(res, { expectArray: true }))
         .then(normaliseResponse)
-        .then(checkArrayLength)
         .then(assertAcctsSample)
 })
 
@@ -57,7 +56,6 @@ Cypress.Commands.add('getCustomerPositions', (customerId) => {
         .then(expectOk)
         .then(res => formatAndSchema(res, { expectArray: true }))
         .then(normaliseResponse)
-        .then(checkArrayLength)
 })
 
 Cypress.Commands.add('getPositionById', (customerId) => {

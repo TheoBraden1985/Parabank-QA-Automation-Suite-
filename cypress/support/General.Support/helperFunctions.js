@@ -1,6 +1,9 @@
 console.log('[API.helpers] loaded');
+<<<<<<< HEAD
 import { AllGETRequests } from "../API.support.utils/getRequests";
 import { postRequests } from "../API.support.utils/postRequests";
+=======
+>>>>>>> origin/main
 
 export const assertAcctsSample = (arr, n = 5) => {
     const sample = Cypress._.sampleSize(arr, Math.min(n, arr.length))
@@ -33,11 +36,14 @@ export const calculateDownPayment = (amount) => {
     return downPayment
 }
 
+<<<<<<< HEAD
 export const checkArrayLength = (arr) => {
    expect(arr.length, 'length should be greater than 1').to.be.greaterThan(1)
    return arr
 }
 
+=======
+>>>>>>> origin/main
 export const determinePricePerShare = (purchasePrice, shares) => {
     return Math.max(1, Math.round(toNumber(purchasePrice) / Math.max(1, toNumber(shares))))
 }
