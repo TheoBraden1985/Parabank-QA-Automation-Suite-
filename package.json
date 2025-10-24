@@ -1,0 +1,18 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm:export": "newman run parabank.postman_collection.json --export-collection cypress/support/parabank.collection.runtime.json",
+    "cy.open": "npm run pm:export && cypress open",
+    "cy.run": "npm run pm:export && cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress-real-events": "^1.14.0",
+    "newman": "^6.2.1"
+  }
+}
