@@ -44,4 +44,74 @@ While building the suite, i discovered several defects in the Parabank app, incl
 -Mocha/Chai (BDD assertions) 
 -Custom Cypress Commands for DRY and reusable flows 
 
+## 🚀 Getting Started
+1. Clone the repo and install dependencies
+   ```bash
+   git clone https://github.com/TheoBraden1985/Parabank-QA-Automation-Suite-.git
+   cd Parabank-QA-Automation-Suite-
+   npm install
+   ```
+2. Run the test suite in interactive mode:
+   ```bash
+   npx cypress open
+   ```
+3. Or run all tests headlessly:
+   ```bash
+   npx cypress run
+   ```
+   
+## 📂 Project Structure 
+```markdown
+cypress/
+  e2e/
+    API.Tests/
+        Account Centric Operations.cy.js
+        Customer Centric Operations.cy.js
+        Loan Centric Operations.cy.js
+        Position Centric Operations.cy.js
+    UI.Tests/
+        Accessibility Tests.cy.js
+        Menu Interaction on Main Page.cy.js
+        Miscellaneous.cy.js
+        Radio Buttons and Dropdowns on Admin page.cy.js
+        Viewport Sanity Check.cy.js
+    Userflow.Tests/
+        Contact Form Userflow.cy.js
+        Login Userflow.cy.js
+        Registration Userflow.cy.js
+    Fixtures/
+        API.data/
+          apiUser.data.js
+        Form.data/
+          formInput.data.js
+        URL.data/
+          footerLinks.data.js
+          mainMenuLinks.data.js
+          pageLinks.data.js
+          topNavLinks.data.js
+        UX.data/
+          UI.Elements.data.js
+          viewportSizes.data.js
+    Support/
+        API.support.utils/
+          getRequests.js
+          postRequests.js
+        Form/UserFlow.Support/
+          dynamicForm.js
+          generateNewUser.js
+        General.Support/
+          helperFunctions.js
+        UI.Support/
+          checkPageActiveState.js
+          interactiveMethods.js
+          tabbingBehavior.js
+          viewportSanity.js
+        Commands.js
+    cypress.config.js
+    jsconfig.json
+    package-lock.json
+    package.json
+    README.md
+```
+
 
